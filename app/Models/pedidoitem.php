@@ -11,8 +11,6 @@ class pedidoitem extends Model
 
     public $table = 'pedidoitem'; 
 
-    protected $primarykey = 'idPedidoItem';
-
     public $timeStamps = false;
     public $updated_at = false;
     public $created_at = false;
