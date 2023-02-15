@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\pedido;
-use App\Models\pedidoitem;
+//use App\Models\pedidoitem;
 
 class PedidoController extends Controller
 {
