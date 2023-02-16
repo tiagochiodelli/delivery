@@ -71,10 +71,16 @@ class PedidoController extends Controller
     {
         $pedido = Pedido::find($id);
 
+
+
         if ($pedido) {
             $pedido->update($request->all());
-            return $pedido;
+            return response()->json([
+                $pedido
+            ], 200);
         }
+
+      
 
         return response()->json([
             'message' => 'Erro ao editaro'

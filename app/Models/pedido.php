@@ -16,7 +16,7 @@ class pedido extends Model
     public $updated_at = false;
     public $created_at = false;
 
-    protected $fillable = ['CodPedidoEmpresa'];
+    protected $fillable = ['CodPedidoEmpresa', 'CodPedidoStatus'];
 
     public function itens()
     {
