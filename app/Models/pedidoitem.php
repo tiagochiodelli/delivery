@@ -9,7 +9,7 @@ class pedidoitem extends Model
 {
     use HasFactory;
 
-    public $table = 'pedidoitem'; 
+    public $table = 'pedidoitem';
 
     public $timeStamps = false;
     public $updated_at = false;
