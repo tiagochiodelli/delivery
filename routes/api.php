@@ -24,7 +24,7 @@ Route::group(['middleware' => ['auth:sanctum']], function() {
     Route::post('/pedido', [PedidoController::class, 'store']);
     Route::get('/pedido', [PedidoController::class, 'index']);
     Route::get('/pedido/{id}', [PedidoController::class, 'show']);
-    Route::get('/pedido-criado', [PedidoController::class, 'pedido_criado']);
+    Route::get('/pedido-criado/{id}', [PedidoController::class, 'pedido_criado']);
     Route::put('/pedido/{id}', [PedidoController::class, 'update']);
     Route::delete('/pedido/{id}', [PedidoController::class, 'destroy']);
 

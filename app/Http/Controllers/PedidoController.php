@@ -55,9 +55,9 @@ class PedidoController extends Controller
         ], 404);
     }
 
-    public function pedido_criado()
+    public function pedido_criado($id)
     {
-        return Pedido::where("CodPedidoStatus", 2)->with('itens')->first();
+        return Pedido::where("CodPedidoStatus", 2)->where("CodPedidoEmpresa", $id)->with('itens')->first();
     }
 
     /**
